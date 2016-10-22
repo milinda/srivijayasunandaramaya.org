@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+{% for post in site.posts %}
+	<div class="blog-post">
+		<h2 class="blog-post-title">{{ post.title }}</h2>
+		<p class="post-title-meta">Posted on </span><span class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+
+		{{ post.content }}
+	</div>
+{% endfor %}
